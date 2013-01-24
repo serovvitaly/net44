@@ -1,36 +1,16 @@
-
-
-.paved{
-    border-bottom: 1px solid;
-    border-right: 1px solid; 
+  
+.paved .span3.right, .paved .span6.right{
+    float: right;
 }
-.paved .pave3, .paved .pave6{
-    margin: 0;
-    display: inline;  
-}
-.paved .pave3.left .inner, .paved .pave6.left .inner{
-    float: left; 
-}
-.paved .pave3.right .inner, .paved .pave6.right .inner{
-    float: right; 
-}
-
-.paved .pave3 .outer, .paved .pave6 .outer{
-    border-top: 1px solid;
-    border-left: 1px solid;
-    height: 100%;
-    width: 100%;
-}
-
-.paved .pave3 .inner{
+.paved .span3{
     height: 140px;
     width: 290px;
+    margin: 0; 
+    background: #FFFFC0;
 }
-.paved .pave6 .inner{
+.paved .span6{
     height: 280px;
     width: 580px;
-}
-
-.paved, .paved .pave3 .outer, .paved .pave6 .outer{
-    border-color: #C0C0C0;
+    margin: 0;
+    background: #F0F0F0;
 }
