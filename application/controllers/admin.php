@@ -1,6 +1,7 @@
 <?php
 
-class Admin_Controller extends Base_Controller {
+
+class Admin_Controller extends Private_Controller {
 
     public function action_index()
     {
