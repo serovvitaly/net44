@@ -32,7 +32,9 @@ class Home_Controller extends Base_Controller {
 
 	public function action_index()
 	{
-		return View::make('home.index');
+        $products = Product::take(21)->get();
+        
+		return View::make('home.index', array('products' => $products));
 	}
 
 }

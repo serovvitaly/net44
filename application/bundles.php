@@ -43,6 +43,15 @@ return array(
                 'TwigView\\View' => '(:bundle)/view.php',
             )
         )
-    )
+    ),
+    
+    'doctrine' => array(
+        'auto' => true,
+        'autoloads' => array(
+            'map' => array(
+                'Doctrine\Migration' => '(:bundle)/migration.php',
+            ),
+        ),
+    ),
 
 );
