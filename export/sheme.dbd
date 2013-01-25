@@ -1,0 +1,1234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Devart (www.devart.com), the Database Diagram File -->
+<!-- Modifying this generated file will probably render it invalid -->
+<DevartDatabaseDiagram>
+  <SchemaVersion>1.2</SchemaVersion>
+  <DatabaseProvider>59f90733-4d68-4fdf-82a7-f0fcbf5460aa</DatabaseProvider>
+  <Connection>
+    <Name>localhost</Name>
+    <ConnectionString>User Id=root;Host=localhost;Character Set=utf8</ConnectionString>
+  </Connection>
+  <Settings>
+    <DbDiagramOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <CustomProperties />
+    </DbDiagramOptions>
+    <Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="PageOptions">
+      <TopLeftMargins>
+        <Width>39.3700787401575 in/100</Width>
+        <Height>39.3700787401575 in/100</Height>
+      </TopLeftMargins>
+      <BottomRightMargins>
+        <Width>39.3700787401575 in/100</Width>
+        <Height>39.3700787401575 in/100</Height>
+      </BottomRightMargins>
+      <PaperSize>
+        <Width>827 in/100</Width>
+        <Height>1169 in/100</Height>
+      </PaperSize>
+    </Options>
+    <Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="PrintOptions" />
+    <Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="ViewOptions">
+      <ShadowOffset>
+        <X>4 px</X>
+        <Y>4 px</Y>
+      </ShadowOffset>
+      <CustomProperties />
+    </Options>
+  </Settings>
+  <VirtualRelations>
+    <RelationCount>0</RelationCount>
+  </VirtualRelations>
+  <Diagram Version="1.10.0.71">
+    <DiagramModel>
+      <Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="RootModel">
+        <CustomProperties>
+          <OID>0</OID>
+        </CustomProperties>
+        <Children>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>1</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>110 px</X>
+              <Y>80 px</Y>
+            </Location>
+            <Size>
+              <Width>150 px</Width>
+              <Height>93 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_merchants</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>2</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>380 px</X>
+              <Y>-80 px</Y>
+            </Location>
+            <Size>
+              <Width>147 px</Width>
+              <Height>195 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_purchases</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>3</OID>
+              <Comment>4</Comment>
+              <OutModel>2</OutModel>
+              <InModel>1</InModel>
+              <OutPort>5</OutPort>
+              <InPort>6</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>Undefined</X>
+                  <Y>143 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>5</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>148.620688237702 px</X>
+                  <Y>45.2873556351533 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>6</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>360 px</X>
+                <Y>63 px</Y>
+              </PointD>
+              <PointD>
+                <X>360 px</X>
+                <Y>125.287355635153 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_purchases.fk_bk_purchases_bk_merchants_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>4</OID>
+              <HolderModel>3</HolderModel>
+              <Port>7</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>70 px</X>
+                  <Y>-62.287353515625 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>7</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>8</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>1120 px</X>
+              <Y>40 px</Y>
+            </Location>
+            <Size>
+              <Width>182 px</Width>
+              <Height>178 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_users</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>9</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>20 px</X>
+              <Y>440 px</Y>
+            </Location>
+            <Size>
+              <Width>217 px</Width>
+              <Height>144 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_merch_prod_groups</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>10</OID>
+              <Comment>11</Comment>
+              <OutModel>9</OutModel>
+              <InModel>1</InModel>
+              <OutPort>12</OutPort>
+              <InPort>13</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>35 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>12</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>23 px</X>
+                  <Y>91 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>13</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>55 px</X>
+                <Y>420 px</Y>
+              </PointD>
+              <PointD>
+                <X>100 px</X>
+                <Y>420 px</Y>
+              </PointD>
+              <PointD>
+                <X>100 px</X>
+                <Y>180.71875 px</Y>
+              </PointD>
+              <PointD>
+                <X>133 px</X>
+                <Y>180.71875 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>true</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_merch_prod_groups.fk_bk_merch_prod_groups_bk_merchants_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>11</OID>
+              <HolderModel>10</HolderModel>
+              <Port>14</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>-45 px</X>
+                  <Y>139.640625 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>14</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>15</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>640 px</X>
+              <Y>350 px</Y>
+            </Location>
+            <Size>
+              <Width>200 px</Width>
+              <Height>297 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_products</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>16</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>310 px</X>
+              <Y>640 px</Y>
+            </Location>
+            <Size>
+              <Width>194 px</Width>
+              <Height>106 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_groups</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>17</OID>
+              <Comment>18</Comment>
+              <OutModel>16</OutModel>
+              <InModel>9</InModel>
+              <OutPort>19</OutPort>
+              <InPort>20</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>68 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>19</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>212.183906773403 px</X>
+                  <Y>96.7816062533631 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>20</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>290 px</X>
+                <Y>708 px</Y>
+              </PointD>
+              <PointD>
+                <X>290 px</X>
+                <Y>536.781606253363 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_groups.fk_bk_products_groups_bk_merch_prod_groups_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>18</OID>
+              <HolderModel>17</HolderModel>
+              <Port>21</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>20 px</X>
+                  <Y>85.6091918945313 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>21</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>22</OID>
+              <Comment>23</Comment>
+              <OutModel>16</OutModel>
+              <InModel>15</InModel>
+              <OutPort>24</OutPort>
+              <InPort>25</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>53 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>24</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>1.37930682950014 px</X>
+                  <Y>228.160916371395 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>25</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>524 px</X>
+                <Y>693 px</Y>
+              </PointD>
+              <PointD>
+                <X>524 px</X>
+                <Y>578.160916371395 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_groups.fk_bk_products_groups_bk_products_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>23</OID>
+              <HolderModel>22</HolderModel>
+              <Port>26</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>-20 px</X>
+                  <Y>57.4195556640625 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>26</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>27</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>1120 px</X>
+              <Y>360 px</Y>
+            </Location>
+            <Size>
+              <Width>170 px</Width>
+              <Height>144 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_orders</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>28</OID>
+              <Comment>29</Comment>
+              <OutModel>27</OutModel>
+              <InModel>8</InModel>
+              <OutPort>30</OutPort>
+              <InPort>31</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>95 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>30</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>75 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>31</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1215 px</X>
+                <Y>270 px</Y>
+              </PointD>
+              <PointD>
+                <X>1195 px</X>
+                <Y>270 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_orders.fk_bk_orders_bk_users_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>29</OID>
+              <HolderModel>28</HolderModel>
+              <Port>32</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>0 px</X>
+                  <Y>45 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>32</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>33</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>900 px</X>
+              <Y>540 px</Y>
+            </Location>
+            <Size>
+              <Width>213 px</Width>
+              <Height>106 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_to_order</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>34</OID>
+              <Comment>35</Comment>
+              <OutModel>33</OutModel>
+              <InModel>27</InModel>
+              <OutPort>36</OutPort>
+              <InPort>37</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>106.5 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>36</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>72 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>37</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1006.5 px</X>
+                <Y>432 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_to_order.fk_bk_products_to_orders_bk_orders_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>35</OID>
+              <HolderModel>34</HolderModel>
+              <Port>38</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>-56.75 px</X>
+                  <Y>108 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>38</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>39</OID>
+              <Comment>40</Comment>
+              <OutModel>33</OutModel>
+              <InModel>15</InModel>
+              <OutPort>41</OutPort>
+              <InPort>42</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>53 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>41</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>199.08045517121 px</X>
+                  <Y>243.103445025129 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>42</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>880 px</X>
+                <Y>593 px</Y>
+              </PointD>
+              <PointD>
+                <X>880 px</X>
+                <Y>593.103445025129 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_to_order.fk_bk_products_to_orders_bk_products_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>40</OID>
+              <HolderModel>39</HolderModel>
+              <Port>43</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>40 px</X>
+                  <Y>-0.10345458984375 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>43</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>-156.716522216797 px</X>
+              <Y>57 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>44</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>570 px</X>
+              <Y>160 px</Y>
+            </Location>
+            <Size>
+              <Width>232 px</Width>
+              <Height>106 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_to_purchase</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>45</OID>
+              <Comment>46</Comment>
+              <OutModel>44</OutModel>
+              <InModel>15</InModel>
+              <OutPort>47</OutPort>
+              <InPort>48</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>141 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>47</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>71.4942489739437 px</X>
+                  <Y>6.32183712750009 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>48</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>711 px</X>
+                <Y>340 px</Y>
+              </PointD>
+              <PointD>
+                <X>711.494248973944 px</X>
+                <Y>340 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>true</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_to_purchase.fk_bk_products_to_purchase_bk_products_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>46</OID>
+              <HolderModel>45</HolderModel>
+              <Port>49</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>0 px</X>
+                  <Y>-37 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>49</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>50</OID>
+              <Comment>51</Comment>
+              <OutModel>44</OutModel>
+              <InModel>2</InModel>
+              <OutPort>52</OutPort>
+              <InPort>53</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>116 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>52</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>97.5 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>53</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>686 px</X>
+                <Y>17.5 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_products_to_purchase.fk_bk_products_to_purchase_bk_purchases_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>51</OID>
+              <HolderModel>50</HolderModel>
+              <Port>54</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>79.5 px</X>
+                  <Y>142.5 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>54</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="TableModel">
+            <CustomProperties>
+              <OID>55</OID>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <Location>
+              <X>310 px</X>
+              <Y>250 px</Y>
+            </Location>
+            <Size>
+              <Width>186 px</Width>
+              <Height>208 px</Height>
+            </Size>
+            <DbOid>
+              <Path>h45035_booklet.bk_prices_rules</Path>
+              <TypeName>Table</TypeName>
+            </DbOid>
+            <Compartments>
+              <ConstraintsCollapsed>True</ConstraintsCollapsed>
+              <IndexesCollapsed>True</IndexesCollapsed>
+              <TriggersCollapsed>True</TriggersCollapsed>
+            </Compartments>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>56</OID>
+              <Comment>57</Comment>
+              <OutModel>55</OutModel>
+              <InModel>1</InModel>
+              <OutPort>58</OutPort>
+              <InPort>59</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>93 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>58</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>69.75 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>59</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>403 px</X>
+                <Y>149.75 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_prices_rules.fk_bk_prices_rules_bk_merchants_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>57</OID>
+              <HolderModel>56</HolderModel>
+              <Port>60</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>71.5 px</X>
+                  <Y>100.25 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
+                <CustomProperties>
+                  <OID>60</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>61</OID>
+              <Comment>62</Comment>
+              <OutModel>55</OutModel>
+              <InModel>15</InModel>
+              <OutPort>63</OutPort>
+              <InPort>64</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>156 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>63</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>3.67815739161301 px</X>
+                  <Y>112.068962984694 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>64</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>566 px</X>
+                <Y>406 px</Y>
+              </PointD>
+              <PointD>
+                <X>566 px</X>
+                <Y>462.068962984694 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_prices_rules.fk_bk_prices_rules_bk_products_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>62</OID>
+              <HolderModel>61</HolderModel>
+              <Port>65</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>-70 px</X>
+                  <Y>-28.0344848632813 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>65</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>66</OID>
+              <Comment>67</Comment>
+              <OutModel>55</OutModel>
+              <InModel>9</InModel>
+              <OutPort>68</OutPort>
+              <InPort>69</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>122 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>68</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>72 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>69</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>290 px</X>
+                <Y>372 px</Y>
+              </PointD>
+              <PointD>
+                <X>290 px</X>
+                <Y>512 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>h45035_booklet.bk_prices_rules.fk_bk_prices_rules_bk_merch_prod_groups_id</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>67</OID>
+              <HolderModel>66</HolderModel>
+              <Port>70</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>20 px</X>
+                  <Y>-70 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>70</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>22 px</X>
+              <Y>2 px</Y>
+            </CommentOffset>
+          </Model>
+        </Children>
+        <ViewPort>
+          <ScaleMode>Free</ScaleMode>
+          <Scale>0.87</Scale>
+          <Location>
+            <X>-108.045976419306 px</X>
+            <Y>-95.4022983276855 px</Y>
+          </Location>
+        </ViewPort>
+      </Model>
+    </DiagramModel>
+  </Diagram>
+</DevartDatabaseDiagram>

@@ -32,6 +32,18 @@
 |
 */
 
+
+Route::filter('filter', function(){
+    if ( !Auth::check() ) {
+        return Redirect::to('/auth/login'); 
+    }
+});
+
+Route::get('merchant', array('before' => 'filter', function(){
+    return 'MERCH';
+}));
+
+
 Route::controller( Controller::detect() );
 
 /*

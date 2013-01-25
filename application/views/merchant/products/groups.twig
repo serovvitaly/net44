@@ -1,0 +1,38 @@
+{% extends "merchant/index.twig" %}
+
+{% block title %}Админка::Группы продуктов{% endblock %}
+
+{% block content %}
+
+<div class="btn-toolbar">
+  <div class="btn-group">
+    <a class="btn btn-primary" href="#">Новая группа</a>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ИД</th>
+      <th>Имя</th>
+      <th>Описание</th>
+      <th>Продуктов</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td>Коллекция весна-лето 2011</td>
+      <td>Уцененные вещи</td>
+      <td><a href="#">34</a></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Коллекция весна-лето 2011</td>
+      <td>Уцененные вещи</td>
+      <td><a href="#">18</a></td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

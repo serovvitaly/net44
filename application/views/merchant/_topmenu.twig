@@ -1,20 +1,24 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/admin/">ADM</a>
+      <a class="brand" href="/merchant/">Merchant</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
           <li class="divider-vertical"></li>
-          <li class="">
-            <a href="/" target="_blank">На сайт</a>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ПРОДУКТЫ <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="products_groups">Группы продуктов</a></li>
+              <li><a href="products_list">Список продуктов</a></li>
+              <li><a href="prices_rules">Ценовые правила</a></li>
+            </ul>
           </li>
           <li class="divider-vertical"></li>
-          <li class="">
-            <a href="./getting-started.html">Get started</a>
-          </li>
-          <li class="divider-vertical"></li>
-          <li class="active">
-            <a href="./scaffolding.html">Scaffolding</a>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ЗАКУПКИ <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="purchases_list">Список закупок</a></li>
+            </ul>
           </li>
           <li class="divider-vertical"></li>
         </ul>
